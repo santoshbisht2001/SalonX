@@ -28,10 +28,7 @@ interface Booking {
   userName?: string;
 }
 
-interface User {
-  firstName: string;
-  lastName: string;
-}
+
 
 function SalonBookings() {
   const [bookings, setBookings] = useState<Booking[]>([]);

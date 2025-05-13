@@ -28,9 +28,7 @@ interface Booking {
   salonName?: string;
 }
 
-interface Salon {
-  name: string;
-}
+
 
 function UserBookings() {
   const [bookings, setBookings] = useState<Booking[]>([]);

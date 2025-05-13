@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState, useMemo } from 'react';
-import { toast } from 'react-toastify';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa6';
 import { Button } from './ui/button';
@@ -43,8 +42,6 @@ const CheckoutDialog: React.FC<CheckoutDialogProps> = ({
   isOpen,
   onOpenChange,
   businessHours,
-  cartItems,
-  setCartItems,
   onCheckout
 }) => {
   // State for the dialog
